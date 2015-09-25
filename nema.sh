@@ -7,9 +7,9 @@ case $1 in
   run )
   docker run -ti \
       --name nema \
-      -v ./data:/data \
-      -v ./jars:/jars \
-      -v ./servers:/servers \
+      -v $(pwd)/data:/data \
+      -v $(pwd)/jars:/jars \
+      -v $(pwd)/servers:/servers \
       -p "20000:20000" \
       -p "25665-25729:25665-25729" \
       chamunks/docker-nemanager-wrapper
