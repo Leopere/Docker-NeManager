@@ -11,7 +11,7 @@ case $1 in
       -v "./jars:/jars" \
       -v "./servers:/servers" \
       -p "20000:20000" \
-      -p "25565-25629:25565-25629" \
+      -p "25665-25729:25665-25729" \
       chamunks/docker-nemanager-wrapper
     ;;
   * )
