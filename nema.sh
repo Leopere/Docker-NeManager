@@ -10,8 +10,7 @@ case $1 in
       -v $(pwd)/data:/data \
       -v $(pwd)/jars:/jars \
       -v $(pwd)/servers:/servers \
-      -p "20000:20000" \
-      -p "0.0.0.0:25665-25729:25665-25729" \
+      --net=host \
       --restart on-failure:5 \
       chamunks/docker-nemanager-wrapper
     ;;
