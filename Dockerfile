@@ -5,7 +5,7 @@ FROM centos:7
 MAINTAINER Chamunks <Chamunks@gmail.com>
 
 RUN yum install java-1.8.0-openjdk.x86_64 gtk2.i686 wget -y && \
-    wget -O /nema https://github.com/TunkDesign/NeMa/releases/download/v2.0.1/NeMa && \
+    wget -O /nema https://nemanager.s3.amazonaws.com/wrapper/lin/NeMa && \
     chmod +x /nema
 VOLUME ["/backups", "/servers", "/jars"]
 
